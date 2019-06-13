@@ -8,7 +8,7 @@ console.log("User flipped queen");
 var cardTwo = cards[2];
 cardsInPlay.push(cardTwo);
 console.log("User flipped king");
-if (cardsInPlay[0] !== cardsInPlay[2]) {
+if (cardsInPlay[0] === cardsInPlay[2]) {
 alert("You found a match!");
 }
 else {
