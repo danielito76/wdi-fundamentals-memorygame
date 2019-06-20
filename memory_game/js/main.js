@@ -32,7 +32,7 @@ function createBoard (){
 	var cardElement = document.createElement('img');
 	cardElement.setAttribute('src', 'images/back.png');
 	cardElement.setAttribute('data-id', i);
-	cardElement.addEventListener("mousedown", flipCard);
+	cardElement.addEventListener("click", flipCard);
   	document.getElementById("game-board").appendChild(cardElement);
 	}
 }
@@ -63,6 +63,18 @@ function flipCard() {
 
 
 	createBoard();
+
+
+
+	//from here script for second 3D flipping
+
+function myFunction() {
+  var x = document.getElementsByClassName("card");
+  var i;
+  for (i = 0; i < x.length; i++) {
+  x[i].classList.toggle('is-flipped');
+  }
+}
 
 
 
